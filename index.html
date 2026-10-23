@@ -245,6 +245,11 @@
     border: 1px solid rgba(5,6,11,.28); padding: 3px 10px; border-radius: 999px;
   }
   .proj-body { padding: 22px 24px 24px; }
+  .proj-photo { margin: 0 0 22px; }
+  .proj-photo img { display: block; width: 100%; max-width: 520px; height: auto; margin: 0 auto;
+                    border-radius: 13px; border: 1px solid var(--line); }
+  .proj-photo figcaption { text-align: center; font-size: 12.5px; color: var(--text-3); margin-top: 8px; }
+  #aqualogic { scroll-margin-top: 80px; }
   .proj-body > p { color: var(--text-2); font-size: 15px; }
   ul.bul { margin: 0 0 20px; padding-left: 20px; color: var(--text-2); font-size: 15px; }
   ul.bul li { margin-bottom: 8px; }
@@ -851,13 +856,18 @@
       </div>
     </article>
 
-    <article class="card proj">
+    <article class="card proj" id="aqualogic">
       <div class="proj-head proj-c">
         <span class="proj-year">2026</span>
         <h3>AquaLogic — bulk water leak detection</h3>
         <p>A pipe that phones a person the moment it starts leaking, instead of waiting for someone to notice.</p>
       </div>
       <div class="proj-body">
+        <figure class="proj-photo">
+          <img src="aqualogic-team.jpg" width="960" height="1060" loading="lazy"
+               alt="The AquaLogic team standing behind the working leak detection prototype outside the College of Business and Economics, University of Johannesburg">
+          <figcaption>The AquaLogic team with the working prototype, College of Business and Economics, University of Johannesburg.</figcaption>
+        </figure>
         <p>
           South Africa loses close to half the water it treats before it reaches a tap,
           almost all of it to pipe bursts nobody spots in time. AquaLogic is a sensor and
